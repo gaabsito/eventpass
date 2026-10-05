@@ -1,0 +1,22 @@
+{
+    "Item": {
+        "id": {
+            "S": "b25e4d1b-67e5-4198-b748-d26c546baf56"
+        },
+        "email": {
+            "S": "eventpass-pages@example.com"
+        },
+        "name": {
+            "S": "Prueba EventPass Pages"
+        },
+        "interest": {
+            "S": "Cloud & Serverless"
+        },
+        "timestamp": {
+            "S": "2026-10-05T09:29:18.550Z"
+        },
+        "requestId": {
+            "S": "83c00cab-b1c3-4d1f-a7b0-575d7161ab3e"
+        }
+    }
+}

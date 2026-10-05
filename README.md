@@ -95,6 +95,10 @@ La suscripción email se crea y confirma por separado. Para limpiar al terminar 
 ## Estado de verificación
 
 - Infraestructura desplegada tras revisar plan de 14 creaciones.
-- POST válido 201; tres pruebas inválidas 400; CORS verificado.
-- Suscripción EventPass solicitada: pendiente de confirmar y verificar entrega final.
-- Evidencias adicionales de frontend, registro, logs y correo se incorporan al cerrar la prueba completa.
+- POST válido 201; tres pruebas inválidas 400; preflight CORS 200.
+- Suscripción EventPass confirmada y correo recibido.
+- Formulario publicado probado: solicitud `b25e4d1b-67e5-4198-b748-d26c546baf56`.
+- El mismo ID aparece en DynamoDB, CloudWatch y correo SNS; datos en `evidencias/`.
+- Informe y capturas: `evidencias/informe.html` y archivos PNG. El informe reproduce las salidas reales de AWS CLI y el contenido del correo verificado; no es una captura de AWS Console.
+
+La defensa individual sigue siendo parte de la evaluación: estudia el código y las decisiones anteriores antes de entregar.

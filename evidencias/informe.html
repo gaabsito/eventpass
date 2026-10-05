@@ -1,0 +1,56 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><title>EventPass · Evidencias reales</title><style>body{font:16px system-ui;background:#f6f6ed;color:#15231c;margin:0;padding:36px}h1{font-size:32px}h2{font-size:24px}pre{background:white;border:1px solid #cad3bc;padding:20px;border-radius:10px;white-space:pre-wrap;overflow-wrap:anywhere;font:14px monospace}section{margin:40px 0;scroll-margin-top:20px}small{color:#667166}</style><h1>EventPass · Evidencias de ejecución</h1><p>5 octubre 2026 · AWS us-west-2</p><small>Salidas obtenidas de AWS CLI y correo SNS verificado. La prueba HTTP usa un envío CLI; item, logs y correo corresponden al mismo envío desde Pages.</small><section id="http"><h2>Petición HTTP correcta</h2><p>Fuente: valida.json</p><pre>{
+  &quot;prueba&quot;: &quot;valida&quot;,
+  &quot;url&quot;: &quot;https://dl3kveh7jg.execute-api.us-west-2.amazonaws.com/dev/contact&quot;,
+  &quot;entrada&quot;: &quot;{\&quot;name\&quot;: \&quot;Prueba EventPass CLI\&quot;, \&quot;email\&quot;: \&quot;eventpass@example.com\&quot;, \&quot;interest\&quot;: \&quot;Cloud &amp; Serverless\&quot;}&quot;,
+  &quot;http&quot;: 201,
+  &quot;respuesta&quot;: {
+    &quot;success&quot;: true,
+    &quot;id&quot;: &quot;33921aa8-7cec-47cd-8a30-a29fac4779c0&quot;,
+    &quot;requestId&quot;: &quot;2af83cfa-beeb-4c55-a985-8dd05ef9a480&quot;,
+    &quot;message&quot;: &quot;Solicitud guardada y notificada.&quot;
+  }
+}</pre></section><section id="dynamodb"><h2>Item DynamoDB · envío desde Pages</h2><p>Fuente: item-pages.json</p><pre>{
+    &quot;Item&quot;: {
+        &quot;id&quot;: {
+            &quot;S&quot;: &quot;b25e4d1b-67e5-4198-b748-d26c546baf56&quot;
+        },
+        &quot;email&quot;: {
+            &quot;S&quot;: &quot;eventpass-pages@example.com&quot;
+        },
+        &quot;name&quot;: {
+            &quot;S&quot;: &quot;Prueba EventPass Pages&quot;
+        },
+        &quot;interest&quot;: {
+            &quot;S&quot;: &quot;Cloud &amp; Serverless&quot;
+        },
+        &quot;timestamp&quot;: {
+            &quot;S&quot;: &quot;2026-10-05T09:29:18.550Z&quot;
+        },
+        &quot;requestId&quot;: {
+            &quot;S&quot;: &quot;83c00cab-b1c3-4d1f-a7b0-575d7161ab3e&quot;
+        }
+    }
+}
+</pre></section><section id="cloudwatch"><h2>Logs CloudWatch · mismo envío</h2><p>Fuente: cloudwatch-pages.json</p><pre>[
+    {
+        &quot;timestamp&quot;: 1791192558884,
+        &quot;message&quot;: &quot;2026-10-05T09:29:18.884Z\td7779d60-e175-4e05-818b-1e598f4cd4f1\tINFO\t{\&quot;event\&quot;:\&quot;request_saved\&quot;,\&quot;id\&quot;:\&quot;b25e4d1b-67e5-4198-b748-d26c546baf56\&quot;,\&quot;requestId\&quot;:\&quot;83c00cab-b1c3-4d1f-a7b0-575d7161ab3e\&quot;}\n&quot;
+    },
+    {
+        &quot;timestamp&quot;: 1791192559034,
+        &quot;message&quot;: &quot;2026-10-05T09:29:19.034Z\td7779d60-e175-4e05-818b-1e598f4cd4f1\tINFO\t{\&quot;event\&quot;:\&quot;notification_published\&quot;,\&quot;id\&quot;:\&quot;b25e4d1b-67e5-4198-b748-d26c546baf56\&quot;,\&quot;requestId\&quot;:\&quot;83c00cab-b1c3-4d1f-a7b0-575d7161ab3e\&quot;,\&quot;messageId\&quot;:\&quot;f4dac8be-28b4-59e6-9f20-ab83589b2997\&quot;}\n&quot;
+    }
+]
+</pre></section><section id="sns"><h2>Notificación SNS recibida en Gmail</h2><p>Fuente: notificacion-pages.json</p><pre>{
+  &quot;fuente&quot;: &quot;Correo AWS Notifications abierto y verificado en Gmail&quot;,
+  &quot;asunto&quot;: &quot;Nueva solicitud - Prueba EventPass Pages&quot;,
+  &quot;recibido&quot;: &quot;2026-10-05 11:29 Europe/Madrid&quot;,
+  &quot;contenido&quot;: {
+    &quot;id&quot;: &quot;b25e4d1b-67e5-4198-b748-d26c546baf56&quot;,
+    &quot;email&quot;: &quot;eventpass-pages@example.com&quot;,
+    &quot;name&quot;: &quot;Prueba EventPass Pages&quot;,
+    &quot;interest&quot;: &quot;Cloud &amp; Serverless&quot;,
+    &quot;timestamp&quot;: &quot;2026-10-05T09:29:18.550Z&quot;,
+    &quot;requestId&quot;: &quot;83c00cab-b1c3-4d1f-a7b0-575d7161ab3e&quot;
+  }
+}</pre></section></html>

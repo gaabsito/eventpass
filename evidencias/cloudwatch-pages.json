@@ -1,0 +1,10 @@
+[
+    {
+        "timestamp": 1791192558884,
+        "message": "2026-10-05T09:29:18.884Z\td7779d60-e175-4e05-818b-1e598f4cd4f1\tINFO\t{\"event\":\"request_saved\",\"id\":\"b25e4d1b-67e5-4198-b748-d26c546baf56\",\"requestId\":\"83c00cab-b1c3-4d1f-a7b0-575d7161ab3e\"}\n"
+    },
+    {
+        "timestamp": 1791192559034,
+        "message": "2026-10-05T09:29:19.034Z\td7779d60-e175-4e05-818b-1e598f4cd4f1\tINFO\t{\"event\":\"notification_published\",\"id\":\"b25e4d1b-67e5-4198-b748-d26c546baf56\",\"requestId\":\"83c00cab-b1c3-4d1f-a7b0-575d7161ab3e\",\"messageId\":\"f4dac8be-28b4-59e6-9f20-ab83589b2997\"}\n"
+    }
+]

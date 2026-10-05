@@ -1,0 +1,13 @@
+{
+  "fuente": "Correo AWS Notifications abierto y verificado en Gmail",
+  "asunto": "Nueva solicitud - Prueba EventPass Pages",
+  "recibido": "2026-10-05 11:29 Europe/Madrid",
+  "contenido": {
+    "id": "b25e4d1b-67e5-4198-b748-d26c546baf56",
+    "email": "eventpass-pages@example.com",
+    "name": "Prueba EventPass Pages",
+    "interest": "Cloud & Serverless",
+    "timestamp": "2026-10-05T09:29:18.550Z",
+    "requestId": "83c00cab-b1c3-4d1f-a7b0-575d7161ab3e"
+  }
+}
