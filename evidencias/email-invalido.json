@@ -1,0 +1,10 @@
+{
+  "prueba": "email-invalido",
+  "url": "https://dl3kveh7jg.execute-api.us-west-2.amazonaws.com/dev/contact",
+  "entrada": "{\"name\": \"Prueba\", \"email\": \"no-es-email\", \"interest\": \"Cloud\"}",
+  "http": 400,
+  "respuesta": {
+    "error": "Revisa nombre, email e interés; los tres son obligatorios.",
+    "requestId": "0d0a8917-b81e-435b-a3f7-a01f2f1c70e2"
+  }
+}

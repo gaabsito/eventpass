@@ -1,0 +1,14 @@
+HTTP/2 200 
+content-type: application/json
+content-length: 0
+date: Mon, 05 Oct 2026 09:26:33 GMT
+access-control-allow-methods: POST,OPTIONS
+x-amzn-requestid: 889b79d4-f592-4307-a30e-1c05b1b43d51
+access-control-allow-origin: https://gaabsito.github.io
+access-control-allow-headers: Content-Type
+x-amz-apigw-id: Ew4DoGMKvHcEKMA=
+x-cache: Miss from cloudfront
+via: 1.1 e51128cbc5c6c2bfa2ca665022eb945e.cloudfront.net (CloudFront)
+x-amz-cf-pop: MAD53-P8
+x-amz-cf-id: sjCEkH5Z6R8IOjfrdJTemPKwazNBOTxKQPNh7bA5IbesXiACvgaLGg==
+

@@ -1,0 +1,10 @@
+{
+  "prueba": "falta-interest",
+  "url": "https://dl3kveh7jg.execute-api.us-west-2.amazonaws.com/dev/contact",
+  "entrada": "{\"name\": \"Prueba\", \"email\": \"eventpass@example.com\"}",
+  "http": 400,
+  "respuesta": {
+    "error": "Revisa nombre, email e interés; los tres son obligatorios.",
+    "requestId": "0f0549cc-159c-42cf-838e-8476f658e935"
+  }
+}

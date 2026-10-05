@@ -1,0 +1,10 @@
+{
+  "prueba": "json-invalido",
+  "url": "https://dl3kveh7jg.execute-api.us-west-2.amazonaws.com/dev/contact",
+  "entrada": "{",
+  "http": 400,
+  "respuesta": {
+    "error": "El cuerpo debe ser JSON válido.",
+    "requestId": "a7030bcd-0dbe-440c-b2fd-1575af95fc14"
+  }
+}

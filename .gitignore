@@ -1,0 +1,5 @@
+**/.terraform/
+**/*.tfstate*
+**/*.tfplan
+**/function.zip
+.DS_Store

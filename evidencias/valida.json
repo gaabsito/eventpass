@@ -1,0 +1,12 @@
+{
+  "prueba": "valida",
+  "url": "https://dl3kveh7jg.execute-api.us-west-2.amazonaws.com/dev/contact",
+  "entrada": "{\"name\": \"Prueba EventPass CLI\", \"email\": \"eventpass@example.com\", \"interest\": \"Cloud & Serverless\"}",
+  "http": 201,
+  "respuesta": {
+    "success": true,
+    "id": "33921aa8-7cec-47cd-8a30-a29fac4779c0",
+    "requestId": "2af83cfa-beeb-4c55-a985-8dd05ef9a480",
+    "message": "Solicitud guardada y notificada."
+  }
+}
